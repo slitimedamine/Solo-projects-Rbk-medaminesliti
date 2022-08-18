@@ -13,9 +13,8 @@
   <title>Medaquaria</title>
 </head>
 <body>
-  <!--debut Navbar-->
-    <header>
-    <nav class="navbar navbar-expand-lg bg-light" class="padding-left">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light" class="padding-left ">
         <nav class="navbar bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -61,43 +60,53 @@
         </div>
       </nav>   
  </header> 
- <!--fin Navbar-->
- 
- <div>
-   <p class="resume">Medaquaria est une boutique en ligne, spécialisée dans la vente d’aquarium, de matériel et accessoires d’aquariophilie sur internet. Medaquaria vous propose la livraison gratuite .</p>
- </div>
-
- <style>
-   body {
-     background-color: rgb(47, 95, 150);
-     width: 100%;
-   }
-   .resume{
-     color: white;
-     font-weight: 700;
-     font-size: 1.3em; 
-     justify-content: center; 
-     padding-top: 150px;
-     padding-left: 100px;
-     justify-content: space-between;
-   }
- </style>
-  <footer class="conatiner" style=" background-color:rgb(194, 194, 186);padding-top: 55px;" >
-    <div class="row" style="padding-left: 120px;padding-top:20px;width: 100%;">
-      <div class="col">
-        <h5>Heures d'ouverture</h5>
-        <p>Lundi au vendredi - 8 h à 17 h</p>
-        <p>Samedi - 8h à 13 h</p>
+  <div class=" row justify-content-center "> 
+    <div class="col-6">
+      <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Email</label>
+        <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email" required>
       </div>
-      <div class="col"style="padding-left: 150px;">
-        <div style="padding-left: 40px;padding-bottom: 10px;"><a href="contact.html"><button type="button" class="btn btn-primary">Contactez-nous</button></div></a>
-        <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-facebook-f"></i></a>
-        <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-youtube"></i></a>
-        <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/mohamed-amine-sliti-281944b1/"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-linkedin"></i></a>
-        
-        <div style="padding-top:100px;">
-        <p>&copy Copyright Mohamed Amine Sliti - 2022</p></div>
-        </footer>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Enter Password </label>
+        <input type = "password" class="form-control" id="formGroupExampleInput2" placeholder="Password" id="msp1"required>
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Confirm Password</label>
+        <input type = "password" class="form-control" id="formGroupExampleInput2" placeholder="Confirm Password" id="msp2" required>
+      </div>
+      <div class="mb-3 col-12">
+        <button type="button" class="btn btn-success" onclick="Password()">Submit</button>
+     </div>
+    </div>
+  </div>
+  <script>  
+    function Password() {  
+      var w1 = document.getElementById("msp1");  
+      var w2 = document.getElementById("msp2");  
+      if(w1 != w2)  
+      {   
+        alert("Passwords did not match");  
+      } else {  
+        alert("Password created successfully");  
+      }  
+    }  
+    </script>  
+      <footer class="conatiner" style=" background-color:rgb(194, 194, 186);padding-top: 55px;" >
+        <div class="row" style="padding-left: 120px;padding-top:20px;width: 100%;">
+          <div class="col">
+            <h5>Heures d'ouverture</h5>
+            <p>Lundi au vendredi - 8 h à 17 h</p>
+            <p>Samedi - 8h à 13 h</p>
+          </div>
+          <div class="col"style="padding-left: 150px;">
+            <div style="padding-left: 40px;padding-bottom: 10px;"><a href="contact.html"><button type="button" class="btn btn-primary">Contactez-nous</button></div></a>
+            <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-amine-sliti-281944b1/"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-linkedin"></i></a>
+            
+            <div style="padding-top:100px;">
+            <p>&copy Copyright Mohamed Amine Sliti - 2022</p></div>
+            </footer>
 </body>
 </html>
