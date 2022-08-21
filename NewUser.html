@@ -9,104 +9,104 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="main.js"defer></script>
   <title>Medaquaria</title>
 </head>
 <body>
+  <!----------------------------Debut NavBar----------------------------------->
   <header>
-    <nav class="navbar navbar-expand-lg bg-light" class="padding-left ">
-        <nav class="navbar bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                 <img src="poisson-clown.jpg" alt="aquaria" width="60" height="54" class="d-inline-block align-text-top">
-              </a>
-            </div>
-          </nav>
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Medaquaria</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <a class="navbar-brand" href="#">
+            <img src="IMG/poisson-clown.jpg" alt="poisson-clown" width="30" height="24">
+          </a>
+          <a class="navbar-brand" href="#">AquaMed</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a  class="nav-link disabled" href="#">Aquarium</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Category
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Aquarium.HTML">Aquarium</a></li>
-                  <li><a class="dropdown-item" href="Filtration.html">Filtration</a></li>
-                  <li><a class="dropdown-item" href="#">Pumps</a></li>
-                  <li><a class="dropdown-item" href="#">Temperature</a></li>
-                  <li><a class="dropdown-item" href="#">Lighting</a></li>
-                  <li><a class="dropdown-item" href="#">Fish Food</a></li>
-              </ul>
-                <li class="nav-item">
-                <a class="nav-link" href="SignIn.html">Sign In</a>
-              </li>
-              </li>
-               </ul>
+              <li class="nav-item">
+               <a  class="nav-link disabled" href="#">Filtraion</a>
+             </li>
+             <li class="nav-item">
+               <a  class="nav-link disabled" href="#">SignIn</a>
+             </li>
+             <li class="nav-item">
+               <a  class="nav-link disabled" href="#">Contact</a>
+             </li>
+            </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
         </div>
-      </nav>   
- </header> 
+      </nav>
+   </header>
+   <!---------------------------- Fin NavBar----------------------------------->
   <div class=" row justify-content-center "> 
     <div class="col-6">
       <div class="mb-3">
         <label for="formGroupExampleInput" class="form-label">Email</label>
-        <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email" required>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
       </div>
       <div class="mb-3">
-        <label for="formGroupExampleInput2" class="form-label">Enter Password </label>
-        <input type = "password" class="form-control" id="formGroupExampleInput2" placeholder="Password" id="msp1"required>
+        <label for="formGroupExampleInput2" class="form-label">Password</label>
+        <input type = "password" class="form-control"  placeholder="Password" id="Password"required>
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label">Confirm Password</label>
-        <input type = "password" class="form-control" id="formGroupExampleInput2" placeholder="Confirm Password" id="msp2" required>
+        <input type = "password" class="form-control"  placeholder="Confirm Password" id="ConfirmPassword" required>
+        <div id="msg"></div>
       </div>
       <div class="mb-3 col-12">
         <button type="button" class="btn btn-success" onclick="Password()">Submit</button>
      </div>
     </div>
   </div>
-  <script>  
-    function Password() {  
-      var w1 = document.getElementById("msp1");  
-      var w2 = document.getElementById("msp2");  
-      if(w1 != w2)  
-      {   
-        alert("Passwords did not match");  
-      } else {  
-        alert("Password created successfully");  
-      }  
+
+ <script>
+    $(document).ready(function(){
+     $("#ConfirmPassword").keyup(function(){
+       if ($("#Password").val() != $("#ConfirmPassword").val()) {
+          $("#msg").html("Password do not match").css("color","red");
+       }else{
+          $("#msg").html("Password matched").css("color","green");
+       }
+     });
+    });
+    function Password() { 
+     alert("created successfully");  
     }  
-    </script>  
-      <footer class="conatiner" style=" background-color:rgb(194, 194, 186);padding-top: 55px;" >
-        <div class="row" style="padding-left: 120px;padding-top:20px;width: 100%;">
-          <div class="col">
-            <h5>Heures d'ouverture</h5>
-            <p>Lundi au vendredi - 8 h à 17 h</p>
-            <p>Samedi - 8h à 13 h</p>
-          </div>
-          <div class="col"style="padding-left: 150px;">
-            <div style="padding-left: 40px;padding-bottom: 10px;"><a href="contact.html"><button type="button" class="btn btn-primary">Contactez-nous</button></div></a>
-            <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-facebook-f"></i></a>
-            <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-youtube"></i></a>
-            <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/mohamed-amine-sliti-281944b1/"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-linkedin"></i></a>
-            
-            <div style="padding-top:100px;">
-            <p>&copy Copyright Mohamed Amine Sliti - 2022</p></div>
-            </footer>
+ </script>
+
+
+<!--------------------------------------- Begin footer-------------------------------------------------->
+ <footer class="container"style="background-color:rgb(194, 194, 186);padding-top:5px;" >
+   <div class="row" style="padding-left: 120px;padding-top:20px;">
+     <div class="col-6">
+       <h5>Heures d'ouverture</h5>
+       <p>Lundi au vendredi - 8 h à 17 h</p>
+       <p>Samedi - 8h à 13 h</p>
+     </div>
+     <div class="col-6"style="padding-left: 150px;">
+       <div style="padding-left: 40px;padding-bottom: 10px;"><a href="#top4"><button type="button" class="btn btn-primary">Contactez-nous</button></div></a>
+       <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-facebook-f"></i></a>
+       <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-youtube"></i></a>
+       <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/mohamed-amine-sliti-281944b1/"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-linkedin"></i></a>
+       
+       <div style="padding-top:10px;">
+        <p> &copy Copyright Mohamed Amine Sliti - 2022</p>
+      </div>
+     </div>
+   </div>
+ </footer>
+<!--------------------------------------- End footer-------------------------------------------------->
 </body>
 </html>

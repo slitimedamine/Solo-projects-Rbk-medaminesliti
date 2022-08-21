@@ -5,99 +5,346 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="main.js"defer></script>
-  <title>Medaquaria</title>
+  <title>AquaMed</title>
 </head>
 <body>
-  <!--debut Navbar-->
+    <!----------------------------Debut NavBar----------------------------------->
     <header>
-    <nav class="navbar navbar-expand-lg bg-light" class="padding-left">
-        <nav class="navbar bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                 <img src="poisson-clown.jpg" alt="aquaria" width="60" height="54" class="d-inline-block align-text-top">
-              </a>
-            </div>
-          </nav>
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Medaquaria</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+     <nav class="navbar navbar-expand-lg bg-light">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">
+             <img src="IMG/poisson-clown.jpg" alt="poisson-clown" width="30" height="24">
+           </a>
+           <a class="navbar-brand" href="#">AquaMed</a>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="#!">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#top"id="aqua">Aquarium</a>
+               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#top1"id="filtre">Filtraion</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#top3"id="SingIn">SignIn</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Category
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Aquarium.HTML">Aquarium</a></li>
-                  <li><a class="dropdown-item" href="Filtration.html">Filtration</a></li>
-                  <li><a class="dropdown-item" href="#">Pumps</a></li>
-                  <li><a class="dropdown-item" href="#">Temperature</a></li>
-                  <li><a class="dropdown-item" href="#">Lighting</a></li>
-                  <li><a class="dropdown-item" href="#">Fish Food</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#top4"id="Contact">Contact</a>
+              </li>
+              
+               
               </ul>
-                <li class="nav-item">
-                <a class="nav-link" href="SignIn.html">Sign In</a>
-              </li>
-              </li>
-               </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>   
- </header> 
- <!--fin Navbar-->
- 
- <div>
-   <p class="resume">Medaquaria est une boutique en ligne, spécialisée dans la vente d’aquarium, de matériel et accessoires d’aquariophilie sur internet. Medaquaria vous propose la livraison gratuite .</p>
- </div>
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search</button>
+             </form>
+           </div>
+         </div>
+       </nav>
+    </header>
+    <!---------------------------- Fin NavBar----------------------------------->
+<style>
+   
 
- <style>
-   body {
-     background-color: rgb(47, 95, 150);
-     width: 100%;
-   }
-   .resume{
-     color: white;
-     font-weight: 700;
-     font-size: 1.3em; 
-     justify-content: center; 
-     padding-top: 150px;
-     padding-left: 100px;
-     justify-content: space-between;
-   }
- </style>
-  <footer class="conatiner" style=" background-color:rgb(194, 194, 186);padding-top: 55px;" >
-    <div class="row" style="padding-left: 120px;padding-top:20px;width: 100%;">
-      <div class="col">
+</style>
+ <div class="resume"> 
+   <h3 class="description">
+     AquaMed est une boutique en ligne, spécialisée dans la vente d’aquarium, de matériel et accessoires d’aquariophilie sur internet. AquaMed vous propose la livraison gratuite .
+   </h3>
+   <img src="IMG/back.jpg" class="rounded mx-auto d-block" alt="...">
+  </div>
+</div>
+
+
+<!--------------------------------------- begin store of Aquarium-------------------------------------------------->
+  <div class="container">
+    <div class="title text-center text-decoration-none" >
+      <h1><a href="#aqua"id="top">Aquarium</a></h1>
+    </div>
+    <div class="row justify-content-around gy-4  ">
+      <div class="card col-6" style="width: 18rem;">
+       <img src="IMG/NANO CUVE.jpg" class="card-img-top" alt="...">
+       <div class="card-body"id="aquarium-1">
+         <h3 class="card-title article">NANO CUVE</h3>
+         <h3 class="prix">500 TND</h3>
+         <p class="card-text">La cuve aquarium DENNERLE NanoCube est un aquarium cubique
+           aux finitions soignées 
+          qui pourra être utilisé pour la nano-aquariophilie et pour l'aqauscaping. Vendue seule, 
+          cette cuve d'aquarium sera idéale pour accueillir betta, petis poissons ou encore crevettes. 
+          Il se prête également très bien à l'aquascaping.</p>
+         <a href="#!" class="btn btn-primary add" data-id="1"><i class="fa fa-cart-arrow-down"></i> ajouter au panier</a>
+         <input type="hidden" id="prix-1" value="500" />
+       </div>
+      </div>
+      <div class="card col-6" style="width: 18rem;">
+        <img src="IMG/Cuve Nue.jpg" class="card-img-top" alt="...">
+        <div class="card-body"id="aquarium-2">
+          <h3 class="card-title article">Cuve Nue</h3>
+          <h3 class="prix">700 TND</h3>
+          <p class="card-text">La cuve nue AMTRA NanoTank est un nano-aquarium, ou aquarium, 
+            idéal pour tous les aquariophiles et les fans de décors naturels.</p>
+          <a href="#!" class="btn btn-primary add" data-id="2"><i class="fa fa-cart-arrow-down"></i> ajouter au panier</a>
+          <input type="hidden" id="prix-2" value="700" />
+        </div>
+     </div>
+    </div>
+
+    <div class="row justify-content-around gy-4  ">
+      <div class="card col-6" style="width: 18rem;">
+        <img src="IMG/Dennerle Aquarium.jpg" class="card-img-top" alt="...">
+        <div class="card-body"id="aquarium-3">
+          <h3 class="card-title article">Dennerle Aquarium</h3>
+          <h3 class="prix">1000 TND</h3>
+          <p class="card-text">Avec une fabrication et des finitions de haute qualité, 
+            cet aquarium apportera beaucoup de cachet et sera un élément de décor dans un intérieur 
+            à la faois esthétique et apaisant. 
+            Les angles de la façade avant sont arrondis pour une excellente vision sans entrave.</p>
+          <a href="#!" class="btn btn-primary add" data-id="3"><i class="fa fa-cart-arrow-down"></i> ajouter au panier</a>
+          <input type="hidden" id="prix-3" value="1000" />
+        </div>
+     </div>
+     <div class="card col-6" style="width: 18rem;">
+        <img src="IMG/Aquarium PANORAMA.jpg" class="card-img-top" alt="...">
+        <div class="card-body"id="aquarium-4">
+          <h3 class="card-title article">Aquarium Panorama</h3>
+          <h3 class="prix">1200 TND</h3>
+          <p class="card-text"> Nouvel aquarium attrayant avec verre bombé qui offre un effet panoramique. 
+            L'aquarium est équipé d'un filtre gouttière, d'une grande capacité biologique. 
+            Facile à entretenir, il convient à la fois à l'aquariophile débutant et au plus expérimenté.</p>
+          <a href="#!" class="btn btn-primary add" data-id="4"><i class="fa fa-cart-arrow-down"></i> ajouter au panier</a>
+          <input type="hidden" id="prix-4" value="1200" />
+        </div>
+     </div>
+    </div>
+    
+    <div class="row justify-content-around gy-4 ">
+
+      <div class="card col-6" style="width: 18rem;">
+        <img src="IMG/Superfish START.jpg" class="card-img-top" alt="...">
+        <div class="card-body"id="aquarium-5">
+          <h3 class="card-title article">Superfish START</h3>
+          <h3 class="prix">1200 TND</h3>
+          <p class="card-text"> Nouvel aquarium attrayant avec verre bombé qui offre un effet panoramique. 
+            L'aquarium est équipé d'un filtre gouttière, d'une grande capacité biologique. 
+            Facile à entretenir, il convient à la fois à l'aquariophile débutant et au plus expérimenté.</p>
+          <a href="#!" class="btn btn-primary add" data-id="5"><i class="fa fa-cart-arrow-down"></i> ajouter au panier</a>
+          <input type="hidden" id="prix-5" value="1200" />
+        </div>
+     </div>
+     <div class="card col-6" style="width: 18rem;">
+       <img src="IMG/Kit aquarium décoratif Jalaya.jpg" class="card-img-top" alt="...">
+       <div class="card-body"id="aquarium-6">
+         <h3 class="card-title article">Kit aquarium décoratif</h3>
+         <h3 class="prix">1100 TND</h3>
+         <p class="card-text"> Le Kit Aquarium Jalaya est livré avec son support bois, 
+           son éclairage LED et son filtre. Ce nano aquarium est parfait pour débuter en aquariophilie.</p>
+         <a href="#!" class="btn btn-primary add" data-id="6"><i class="fa fa-cart-arrow-down"></i> ajouter au panier</a>
+         <input type="hidden" id="prix-6" value="1100" />
+       </div>
+      </div>
+    </div> 
+    <div class="row justify-content-center ">
+     <div class="col ">
+       <div class="panel panel-default"id="panier">
+         <div class="panel-heading">
+           Mon panier
+         </div>
+         <div class="panel-body text-left">
+           <div id="cart">
+           </div>
+          <div class="clearfix">&nbsp;</div>
+           <a href="#!" onclick="alert('Commande Confirmée !')" class="btn btn-success btn-block" id="order">Commander !</a>
+         </div>
+       </div>
+     </div>
+    </div> 
+  </div>
+
+ 
+
+<!--------------------------------------- End store of Aquarium-------------------------------------------------->
+
+
+<!--------------------------------------- Begin store of Filtration-------------------------------------------------->
+  <div class="container">
+    <div class="title text-center " >
+      <h1><a href="#filtre"id="top1">Filtration</a></h1>
+    </div>
+  </div>
+
+<!--------------------------------------- End store of filtration-------------------------------------------------->
+
+<!--------------------------------------- Begin Section of SignIn-------------------------------------------------->
+
+
+<div class="container  text-center"style=" padding-top:10px;padding-bottom:30px;">
+  <a href="#SignIn"id="top3"></a>
+  <div class="row ">
+    <!-----section of Sign In------->
+    <div class="col-6">
+     <form class="p-3 border bg-light"id="contact"name='contact'>
+       <p>If you are a registered customer, please sign in below.</p>
+       <div>
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email"  required>
+       </div>
+        <div style=" padding-top:10px">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" >
+       </div>
+       <div style=" padding-top:10px">
+        <input  type="submit" value="Sing In"class="btn btn-success"data-bs-toggle="modal"onclick="message()">
+       </div>
+      </form>
+    </div>
+    <!-----End section of Sign In------->
+    <!-----section of Sign Up------->
+    <div class="col-6">
+      <form class="p-3 border bg-light"><h4></h4>
+        <p>Having an account with us means we store your profile on our secure server to make future visits fast, safe, and convenient.</p>
+        <div style=" padding-top:70px">
+         <a href="NewUser.html"><button type="button" class="btn btn-primary"> Sign Up</button></a>
+        </div>
+      </form>
+    </div>
+    <!-----End section of Sign Up------->
+  </div>
+</div>
+  <script>
+   $(function() {
+      $("form[name='contact']").validate({
+       rules: {
+         email: {
+           required: true,
+           email: true
+          },
+          password:"required"
+        },
+        messages: {
+           email: "veuillez insérer une adresse mail valide",
+           password:"veuillez remplir ce champ"
+        },
+        submitHandler: function(form) {
+          form.submit();
+        }
+      });
+    });
+  </script>
+<!--------------------------------------- End Section of SignIn-------------------------------------------------->
+
+<!--------------------------------------- Begin Form-------------------------------------------------->
+
+ <div class="container"style="padding-top:20px;">
+  <form class="p-3 border bg-light"id="info"name='info'>
+   <div class="row">
+     <div style="display: flex;justify-content: center;padding-bottom: 20px;">
+        <h2> <a href="#Contact"id="top4">DEMANDE D'INFORMATION</a></h2>
+     </div>
+   </div>
+ 
+   <div class="row" >
+     <div class="col">
+       <div>
+         <label  class="form-label">Nom & Prénom</label>
+         <input type="text" class="form-control" placeholder="Sliti Mohamed Amine"name="name"required >
+      </div>
+      <div>
+         <label for="exampleFormControlInput1" class="form-label">Email</label>
+         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email"required>
+       </div>
+     </div>
+     <div class="col">
+      <div>
+         <label  class="form-label">Téléphone</label>
+         <input type="text" class="form-control" placeholder="22 769 850" name="tel"required >
+      </div>
+      <div>
+         <label  class="form-label">Votre demande concerne</label>
+         <select class="form-select form-select-mb-3" aria-label=".form-select-sm example">
+           <option selected>...</option>
+           <option value="1">Aquarium</option>
+           <option value="2">Filtration</option>
+         </select>
+       </div>
+     </div>
+   </div>
+   <div class="row"style="padding-top:20px;">
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"style="resize:none;"></textarea>
+         
+      </div> 
+    </div> 
+    <div class="row"style="padding-bottom:20px;">
+      <button type="button" class="btn btn-success"  value="Submit" onclick="Envoyer()">Envoyer</button>
+     
+    </div>
+     
+
+  </form>
+  <div id="msgSubmit" class="hidden">
+  
+  </div> 
+  <script>
+   $(function() {
+  $("form[name='info']").validate({
+    rules: {
+      name: "required",
+      tel:{
+       required: true,
+      number: true
+      },
+      email: {
+        required: true,
+        email: true
+      }, 
+    },
+
+    messages: {
+      nom: "veuillez insérer votre nom",
+      tel: 'veuillez insérer un numéro de téléphone',
+      email: "veuillez insérer une adresse mail valide",
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});
+</script>
+<!--------------------------------------- End form----------------------------------------------------------->
+
+
+<!--------------------------------------- begin footer----------------------------------------------------------->
+
+  <footer class="container"style="background-color:rgb(194, 194, 186);padding-top:5px;" >
+    <div class="row" style="padding-left: 120px;padding-top:20px;">
+      <div class="col-6">
         <h5>Heures d'ouverture</h5>
         <p>Lundi au vendredi - 8 h à 17 h</p>
         <p>Samedi - 8h à 13 h</p>
       </div>
-      <div class="col"style="padding-left: 150px;">
-        <div style="padding-left: 40px;padding-bottom: 10px;"><a href="contact.html"><button type="button" class="btn btn-primary">Contactez-nous</button></div></a>
+      <div class="col-6"style="padding-left: 150px;">
+        <div style="padding-left: 40px;padding-bottom: 10px;"><a href="#top4"><button type="button" class="btn btn-primary">Contactez-nous</button></div></a>
         <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-facebook-f"></i></a>
         <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-youtube"></i></a>
         <a href="https://www.facebook.com/mohamed.a.sliti"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/mohamed-amine-sliti-281944b1/"style="text-decoration: none;color: black;font-size: 30px;padding-left: 20px;"><i class="fa fa-linkedin"></i></a>
         
-        <div style="padding-top:100px;">
-        <p>&copy Copyright Mohamed Amine Sliti - 2022</p></div>
-        </footer>
+        <div style="padding-top:10px;">
+         <p> &copy Copyright Mohamed Amine Sliti - 2022</p>
+       </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!--------------------------------------- End footer-------------------------------------------------->
 </body>
 </html>

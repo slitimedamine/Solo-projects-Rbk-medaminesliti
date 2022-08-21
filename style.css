@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+  background-attachment: fixed;
+}
+.resume{
+  padding-top: 20px;
+  padding-bottom: 220px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(108, 108, 134) ;
+}
+#img{
+  justify-content: center;
+  display: flex;
+}
+.description{
+  padding-top: 200px;
+  padding-left: 20px;
+  
+}
+.container{
+  padding-top: 50
+
+}
+#top{
+  text-decoration: none;
+  color: black;
+}
+#top1{
+  text-decoration: none;
+  color: black;
+}
+#top4{
+  text-decoration: none;
+  color: black; 
+}
+
+#panier{
+  justify-content: center;
+}
